@@ -6,99 +6,130 @@
 <title>Wedding Events</title>
 
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-  font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #fff9f0 0%, #fef3e8 50%, #fdf0f5 100%);
-  min-height: 100vh;
-  padding: 2rem 1rem;
-  color: #3a2a1a;
-}
+  body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #fff9f0 0%, #fef3e8 50%, #fdf0f5 100%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    color: #3a2a1a;
+  }
 
-.container { max-width: 480px; margin: 0 auto; }
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
 
-.header { text-align: center; margin-bottom: 2.5rem; }
-.header .flourish { font-size: 2rem; margin-bottom: 0.5rem; }
-.header h1 {
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  color: #8b4a6b;
-}
-.header .subtitle {
-  font-size: 0.95rem;
-  color: #b07a55;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
+  .header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
 
-.divider {
-  text-align: center;
-  color: #d4a0b0;
-  font-size: 1.2rem;
-  letter-spacing: 0.5rem;
-  margin: 1rem 0 2rem;
-}
+  .header .flourish {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 
-.event-card {
-  background: rgba(255,255,255,0.85);
-  border-radius: 16px;
-  border: 1px solid rgba(212, 160, 176, 0.3);
-  padding: 1.5rem;
-  margin-bottom: 1.25rem;
-  backdrop-filter: blur(8px);
-}
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: #8b4a6b;
+    margin-bottom: 0.3rem;
+  }
 
-.event-icon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
+  .header .subtitle {
+    font-size: 0.95rem;
+    color: #b07a55;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
 
-.event-name {
-  font-size: 1.35rem;
-  color: #6b3050;
-  margin-bottom: 0.3rem;
-}
+  .divider {
+    text-align: center;
+    color: #d4a0b0;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    margin: 1rem 0 2rem;
+  }
 
-.event-label {
-  font-size: 0.8rem;
-  color: #b07a55;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.event-label::before { content: '📍'; }
+  .event-card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 16px;
+    border: 1px solid rgba(212,160,176,0.3);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-.directions-btn {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  padding: 0.75rem;
-  background: linear-gradient(135deg, #8b4a6b, #a0556e);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 0.95rem;
-}
-.directions-btn svg { width: 18px; fill: white; }
+  .event-icon {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+    display: block;
+  }
 
-.footer {
-  text-align: center;
-  margin-top: 2.5rem;
-}
-.footer .hearts {
-  font-size: 1.4rem;
-  letter-spacing: 0.4rem;
-  color: #c4788a;
-}
-.footer p {
-  font-size: 0.8rem;
-  color: #c4a882;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
+  .event-name {
+    font-size: 1.4rem;
+    color: #6b3050;
+    margin-bottom: 0.4rem;
+  }
+
+  .event-label {
+    font-size: 0.85rem;
+    color: #b07a55;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .event-label::before {
+    content: "📍";
+  }
+
+  .directions-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: linear-gradient(135deg, #8b4a6b, #a0556e);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    transition: transform 0.15s ease;
+  }
+
+  .directions-btn:hover {
+    transform: scale(1.02);
+  }
+
+  .directions-btn svg {
+    width: 18px;
+    fill: white;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .footer .hearts {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+    color: #c4788a;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+    color: #c4a882;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
 </style>
 </head>
 
@@ -116,10 +147,10 @@ body {
   <!-- Haldi -->
   <div class="event-card">
     <span class="event-icon">🌼</span>
-    <div class="event-name">Haldi at Home</div>
-    <div class="event-label">Tap below for directions</div>
+    <div class="event-name">Haldi</div>
+    <div class="event-label">At Home</div>
     <a class="directions-btn" href="https://maps.app.goo.gl/1UgNH4stachkyje36" target="_blank">
-      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
       Get Directions
     </a>
   </div>
@@ -130,7 +161,7 @@ body {
     <div class="event-name">Engagement &amp; Sangeeth</div>
     <div class="event-label">Y Palace</div>
     <a class="directions-btn" href="https://maps.app.goo.gl/jU16E2Hxn2mwueVf9" target="_blank">
-      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
       Get Directions
     </a>
   </div>
@@ -141,7 +172,7 @@ body {
     <div class="event-name">Muhurtham</div>
     <div class="event-label">Sai ITA Convention Hall</div>
     <a class="directions-btn" href="https://maps.app.goo.gl/BnVLwgLRsNexQoig9" target="_blank">
-      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
       Get Directions
     </a>
   </div>
@@ -152,7 +183,7 @@ body {
     <div class="event-name">Reception</div>
     <div class="event-label">Avantha Banquet Hall</div>
     <a class="directions-btn" href="https://maps.app.goo.gl/aooHMRGLZea1tCQ16" target="_blank">
-      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
       Get Directions
     </a>
   </div>
